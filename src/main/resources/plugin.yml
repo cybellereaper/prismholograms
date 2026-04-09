@@ -1,0 +1,6 @@
+name: PrismHolograms
+version: '${version}'
+
+main: com.github.cybellereaper.prismHolograms.PrismHolograms
+api-version: '26.1.1'
+load: POSTWORLD
