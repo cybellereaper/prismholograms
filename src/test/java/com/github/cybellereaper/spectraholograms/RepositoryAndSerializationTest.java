@@ -1,6 +1,5 @@
 package com.github.cybellereaper.spectraholograms;
 
-import com.example.spectraholograms.model.*;
 import com.github.cybellereaper.spectraholograms.model.*;
 import com.github.cybellereaper.spectraholograms.repository.YamlHologramRepository;
 import com.github.cybellereaper.spectraholograms.serialization.SerializationService;

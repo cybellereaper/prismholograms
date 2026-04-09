@@ -1,6 +1,5 @@
 package com.github.cybellereaper.spectraholograms.repository;
 
-import com.example.spectraholograms.model.*;
 import com.github.cybellereaper.spectraholograms.model.*;
 import com.github.cybellereaper.spectraholograms.serialization.SerializationService;
 import org.bukkit.Color;

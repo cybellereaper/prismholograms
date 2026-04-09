@@ -1,5 +1,7 @@
 package com.github.cybellereaper.spectraholograms;
 
+import com.github.cybellereaper.spectraholograms.api.DefaultSpectraHologramsApi;
+import com.github.cybellereaper.spectraholograms.api.SpectraHologramsApi;
 import com.github.cybellereaper.spectraholograms.command.HologramCommandRegistrar;
 import com.github.cybellereaper.spectraholograms.config.ConfigService;
 import com.github.cybellereaper.spectraholograms.listener.HologramPlayerListener;
@@ -23,6 +25,7 @@ public class SpectraHologramsPlugin extends JavaPlugin {
     private ConfigService configService;
     private HologramManager hologramManager;
     private HologramSpawner hologramSpawner;
+    private SpectraHologramsApi api;
 
     @Override
     public void onEnable() {
@@ -41,6 +44,7 @@ public class SpectraHologramsPlugin extends JavaPlugin {
         this.hologramManager = new HologramManager(repository, serializationService, configService);
         this.hologramSpawner = new HologramSpawner(this, placeholderService, configService);
         HologramVisibilityService visibilityService = new HologramVisibilityService(this, hologramSpawner);
+        this.api = new DefaultSpectraHologramsApi(hologramManager, hologramSpawner);
 
         int loaded = hologramManager.load();
         hologramManager.all().forEach(hologramSpawner::spawnOrRebuild);
@@ -78,6 +82,11 @@ public class SpectraHologramsPlugin extends JavaPlugin {
         if (hologramSpawner != null) {
             hologramSpawner.despawnAll();
         }
+    }
+
+
+    public SpectraHologramsApi api() {
+        return api;
     }
 
     public void reloadAll() {
