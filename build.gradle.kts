@@ -4,7 +4,7 @@ plugins {
     id("xyz.jpenilla.run-paper") version "3.0.2"
 }
 
-group = "com.example"
+group = "com.github.cybellereaper"
 version = "1.0.0"
 
 repositories {
@@ -47,7 +47,7 @@ tasks {
     }
 
     runServer {
-        minecraftVersion("1.21.5")
+        minecraftVersion("1.26.1")
         jvmArgs("-Xms2G", "-Xmx2G", "-Dcom.mojang.eula.agree=true")
     }
 }

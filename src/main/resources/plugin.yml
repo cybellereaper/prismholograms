@@ -1,5 +1,5 @@
 name: SpectraHolograms
-main: com.example.spectraholograms.SpectraHologramsPlugin
+main: com.github.cybellereaper.spectraholograms.SpectraHologramsPlugin
 version: ${version}
 api-version: "26.1.1"
 load: POSTWORLD
