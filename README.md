@@ -36,6 +36,18 @@ A modern Paper hologram plugin using `TextDisplay` entities, designed for mainta
 - `spectraholograms.teleport`
 - `spectraholograms.reload`
 
+
+## API
+Other plugins can access SpectraHolograms through the plugin instance:
+
+```java
+var plugin = (SpectraHologramsPlugin) Bukkit.getPluginManager().getPlugin("SpectraHolograms");
+if (plugin != null) {
+    var api = plugin.api();
+    api.createHologram("spawn", new HologramLocation("world", 0, 64, 0, 0f, 0f), "Welcome");
+}
+```
+
 ## Build
 ```bash
 ./gradlew build
