@@ -1,0 +1,22 @@
+holograms:
+  spawn:
+    world: world
+    x: 0.5
+    y: 80.0
+    z: 0.5
+    yaw: 0.0
+    pitch: 0.0
+    lines:
+      - "&bWelcome to the server"
+      - "&7Online: {online}"
+    view:
+      range: 32.0
+      hiddenByDefault: false
+    style:
+      billboard: CENTER
+      shadowed: true
+      seeThrough: false
+      scale: 1.0
+    meta:
+      createdAt: 0
+      updatedAt: 0

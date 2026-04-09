@@ -1,6 +1,27 @@
-name: PrismHolograms
-version: '${version}'
-
-main: com.github.cybellereaper.prismHolograms.PrismHolograms
-api-version: '26.1.1'
+name: SpectraHolograms
+main: com.example.spectraholograms.SpectraHologramsPlugin
+version: ${version}
+api-version: "26.1.1"
 load: POSTWORLD
+authors: [ "example" ]
+softdepend: [ "PlaceholderAPI" ]
+commands:
+  hologram:
+    aliases: [ "holo" ]
+    description: Root command for SpectraHolograms
+    usage: /<command>
+permissions:
+  spectraholograms.admin:
+    default: op
+  spectraholograms.create:
+    default: op
+  spectraholograms.delete:
+    default: op
+  spectraholograms.edit:
+    default: op
+  spectraholograms.view:
+    default: false
+  spectraholograms.teleport:
+    default: op
+  spectraholograms.reload:
+    default: op
