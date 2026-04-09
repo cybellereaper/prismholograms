@@ -1,1 +1,1 @@
-rootProject.name = "PrismHolograms"
+rootProject.name = "SpectraHolograms"

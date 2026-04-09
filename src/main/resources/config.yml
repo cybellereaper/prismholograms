@@ -1,0 +1,14 @@
+default-visibility-range: 32.0
+line-spacing: 0.28
+autosave-interval-ticks: 6000
+debug-logging: false
+placeholder-refresh-interval-ticks: 40
+world-whitelist: []
+world-blacklist: []
+allow-hidden-by-default-holograms: true
+
+permissions:
+  view-default-allowed: false
+
+placeholderapi:
+  enabled: true
